@@ -4,7 +4,11 @@
   "description": "framework for protractor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "protractor JSFiles/configuration.js ", //npm run test 
+    "pretest": "tsc",  //compiling TS file to JS
+    "cucumbertest": "protractor JSFiles/cucumberconfig.js ",
+    "protractor": "./node_modules/protractor/built/cli.js",  //identifying protractor
+    "webdriver-update":"./node_modules/.bin/webdriver-manager upadet", //npm run webdriver-update
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +19,13 @@
     "@types/jasmine": "2.5.41",
     "@types/jasminewd2": "^2.0.0",
     "ts-node": "^3.0.2",
-    "@types/node": "~10.12.18"
+    "@types/node": "~10.12.18",
+    "protractor-cucumber-framework": "^6.1.3",
+    "cucumber":"^5.1.0",
+    "@types/cucumber": "^4.0.4",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber-html-reporter": "^4.0.4"
+
   }
 }
