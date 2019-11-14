@@ -18,7 +18,7 @@ After(async function (scenario) {
     {
         //code to take screenshot
         const screenshot = await browser.takeScreenshot();
-        this.attached(screenshot,"image/png");
+        this.attached(screenshot,"image/png"); //hello
     }
   
   });
